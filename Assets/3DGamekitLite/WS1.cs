@@ -15,6 +15,7 @@ public class WS1 : MonoBehaviour
     public UnityEvent onstart;
     public float timer = 0;
 
+    
 
 
 // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -23,7 +24,7 @@ public class WS1 : MonoBehaviour
         onstart.Invoke();
         speed = 3.3f;
         rb = GetComponent<Rigidbody>();
-        
+
         for (int counter = 0; counter < 10; counter++)
         {
             Debug.Log(counter);
@@ -31,7 +32,7 @@ public class WS1 : MonoBehaviour
             {
                 Destroy(gameObject);
             }
-
+        }
 
     }
 
